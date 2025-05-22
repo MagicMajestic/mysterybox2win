@@ -1,9 +1,16 @@
 {
-    "0": {
+    "1": {
         "name": "Default",
-        "path": "data/prize_lists/0.txt",
+        "path": "data/prize_lists/1.txt",
         "created_by": "318071839329091584",
-        "created_at": 1746448084.631023,
-        "prize_count": 10
+        "created_at": 1747228825.654067,
+        "prize_count": 55
+    },
+    "2": {
+        "name": "ServerBuster List",
+        "path": "data/prize_lists/2.txt",
+        "created_by": "318071839329091584",
+        "created_at": 1747747865.188706,
+        "prize_count": 56
     }
 }

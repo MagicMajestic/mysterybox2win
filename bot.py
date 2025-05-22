@@ -44,6 +44,19 @@ class MysteryBoxBot(commands.Bot):
         # Initialize session storage
         self._sessions = set()
         
+        # Force command sync on startup
+        os.environ["SYNC_COMMANDS"] = "true"
+        
+        # Sync commands if needed
+        if os.getenv("SYNC_COMMANDS", "false").lower() == "true":
+            try:
+                logger.info("Syncing commands globally...")
+                synced = await self.tree.sync()
+                logger.info(f"Successfully synced {len(synced)} commands")
+            except Exception as e:
+                logger.error(f"Error syncing commands: {e}")
+                raise e
+        
     def store_session(self, session):
         """Store session reference for cleanup"""
         self._sessions.add(session)

@@ -1,14 +1,8 @@
 {
-    "1": {
-        "name": "Default_winner",
-        "path": "data/images/1.gif",
-        "uploaded_by": "318071839329091584",
-        "uploaded_at": 1746383667.586508
-    },
     "0": {
-        "name": "Default_Winner",
+        "name": "Default",
         "path": "data/images/0.gif",
         "uploaded_by": "318071839329091584",
-        "uploaded_at": 1746384034.521189
+        "uploaded_at": 1747225275.824161
     }
 }
